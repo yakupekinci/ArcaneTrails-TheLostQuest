@@ -4153,9 +4153,9 @@ GameObject:
   - component: {fileID: 8937313425560221750}
   - component: {fileID: 482765565652466986}
   - component: {fileID: 2557710682804634881}
-  - component: {fileID: 1252997446521511330}
-  - component: {fileID: 3263824052681262283}
-  - component: {fileID: 8704243319454753368}
+  - component: {fileID: 2202416985491422655}
+  - component: {fileID: 8880921049355125692}
+  - component: {fileID: 3735531650562591465}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -4254,7 +4254,7 @@ CapsuleCollider:
   m_Height: 1.78
   m_Direction: 1
   m_Center: {x: 0, y: 0.89, z: 0}
---- !u!114 &1252997446521511330
+--- !u!114 &2202416985491422655
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4284,7 +4284,7 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &3263824052681262283
+--- !u!114 &8880921049355125692
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4293,7 +4293,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6787114332532607816}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e3193cad89ba4446b0d1b377bd20bae, type: 3}
+  m_Script: {fileID: 11500000, guid: 6f0d9f9eef6c93d48a9d5af25a7c6bca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   AnimBlendSpeed: 8.9
@@ -4301,14 +4301,14 @@ MonoBehaviour:
   Camera: {fileID: 4205792498416907471}
   UpperLimit: -40
   BottomLimit: 70
-  MouseSensitivity: 20
-  JumpFactor: 200
-  Dis2Ground: 1
+  MouseSensitivity: 21.9
+  JumpFactor: 300
+  Dis2Ground: 1.2
   GroundCheck:
     serializedVersion: 2
     m_Bits: 16384
-  AirResistance: 0.6
---- !u!114 &8704243319454753368
+  AirResistance: 0.65
+--- !u!114 &3735531650562591465
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4317,10 +4317,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6787114332532607816}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3148709a230aefc49888f3f050ab98f6, type: 3}
+  m_Script: {fileID: 11500000, guid: 08b5b1ece4ea2ca43b4cd2490832117b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerInput: {fileID: 1252997446521511330}
+  PlayerInput: {fileID: 2202416985491422655}
 --- !u!1 &6794411073301144488
 GameObject:
   m_ObjectHideFlags: 0
@@ -4484,7 +4484,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.01
-  far clip plane: 500
+  far clip plane: 1000
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -4534,7 +4534,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
